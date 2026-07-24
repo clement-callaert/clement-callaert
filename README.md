@@ -1,51 +1,75 @@
-[README_PUBLIC.md](https://github.com/user-attachments/files/30364707/README_PUBLIC.md)
-# Hi, I'm Clément Callaert
+[README_PROFILE.md](https://github.com/user-attachments/files/30364921/README_PROFILE.md)
+# Hi, I'm Clément 👋
 
-I am an AI engineer and research-oriented applied mathematician completing two degrees in parallel:
+## About me 🙂
 
-- a **Diplôme d'ingénieur at CentraleSupélec**, with a major in Mathematics and Data Science;
-- an **M2 in Mathematics and Artificial Intelligence at Université Paris-Saclay**.
+I am a French AI engineer and student, currently completing two degrees in parallel:
+
+- an **Engineering Degree at CentraleSupélec**, with a major in Mathematics and Data Science;
+- a **Research Master's in Mathematics & Artificial Intelligence at Université Paris-Saclay**.
 
 Alongside my studies, I work as a **Generative AI Engineer at MBDA**, where I develop and evaluate multi-agent LLM systems and deploy self-hosted models on GPU infrastructure.
 
-I am looking for a **PhD or research position starting in autumn 2026**. My main interests are generative models, world models, reinforcement learning, LLM agents, test-time computation, and reliable experimental methodology.
+I am interested in **generative models**, **world models**, **reinforcement learning**, **LLM agents**, and **test-time computation**. I enjoy turning research questions into controlled experiments, reproducible code, and honest conclusions, including when the result is negative.
 
-## Featured research
+## What I'm looking for 🎯
 
-### [Ego-World JEPA](https://github.com/clement-callaert/ego-world-sub-jepa)
-Controlled study of factored ego/world latent representations for model-based control on PushT. An eight-configuration screening grid and two-seed follow-up did not support a robust planning advantage from factorization: 12% versus 4% success at seed 0, then 4% versus 4% at seed 1. The project also shows that near-perfect in-slice probe scores do not predict closed-loop planning success.
+I am looking for a **PhD or research position starting in autumn 2026**, primarily in Europe, on topics related to **generative models, world models, diffusion and flow models, LLM agents, or reinforcement learning**.
 
-### [Decision Transformer for Limit Order Book Trading](https://github.com/clement-callaert/Decision-Transformer-LOB-Trading)
-A fully traceable offline-RL benchmark on FI-2010 with five training seeds, Days 1-8 for training, Day 9 for checkpoint selection, and untouched Day 10 evaluation. Return-to-go conditioning materially changes deployed behavior, although the preregistered Decision Transformer did not beat buy-and-hold under the frozen nonzero-cost protocol. Metrics, plot data, manifests, and canonical figures are machine-readable and reproducible.
+If you work on these topics and think there could be a fit, feel free to contact me by email or LinkedIn.
 
-### [ACES Sycophancy](https://github.com/clement-callaert/aces-sycophancy)
-Adaptation of the NeurIPS 2024 ACES quality-diversity framework to search for regressive sycophancy in a local LLM, using Python-grounded fitness rather than LLM judges. A Bayesian learning-progress selector initially suffered from budget lock-in; adding a fixed 20% uniform exploration floor recovered mean coverage to 0.917 and mean QD score to 11.0 across two seeds.
+## Selected research and projects 🔬
 
-### [Adaptive Test-Time Search for Latent Program Networks](https://github.com/clement-callaert/lpn/tree/research/stochastic-latent-search)
-Research extension of the NeurIPS 2025 Latent Program Network codebase. I reproduced the three-seed `pattern_2d` latent-search baseline and implemented an RL stop/continue controller. On the matched sandbox test, the controller preserved fixed-5 exact match of 0.90625 while reducing average search from 5.000 to 4.281 steps. These are implementation results on in-family tasks, not ARC-AGI claims.
+### [Few-Step Field Regularity](https://github.com/clement-callaert/fewstep-field-regularity) 🌊
 
-### [Proximal Diffusion Models in PyTorch](https://github.com/clement-callaert/proximal-diffusion-models-pytorch)
-From-scratch implementation of Proximal Diffusion Models, including reverse-time SDE sampling and proximal-matching denoising on low-dimensional distributions and MNIST.
+A controlled study of whether averaged field regularity can rank probability paths for few-step generative sampling. I built an exact Gaussian Wasserstein benchmark and found **14 ranking inversions out of 36 comparisons** across Euler, Heun, and RK4. The phenomenon replicated in **11 out of 18** comparisons in a preregistered non-centered family and passed an **80-digit precision audit**. The repository also contains an explicit scalar non-implication proof and a checksummed reproducibility pipeline.
 
-### Anonymous generative-modeling manuscript under review
-I am also developing a controlled closed-form study of field-regularity criteria and fixed-budget discretization error in probability-flow ODE sampling. Public submission details and the direct repository link are intentionally omitted while the work is under double-blind review.
+### [Ego-World JEPA](https://github.com/clement-callaert/ego-world-sub-jepa) 🤖
 
-## Experience and leadership
+A controlled comparison of factored and monolithic JEPA world models for planning on PushT with a shared detector and MPPI planner. The apparent seed-0 planning gap, **12% versus 4%**, disappeared at seed 1, **4% versus 4%**, so the factorization hypothesis was not supported. The project also shows that near-perfect in-slice probe scores do not reliably predict closed-loop planning success.
 
-- **Generative AI Engineer, MBDA**: multi-agent LLM systems, reinforcement learning, vLLM, Docker, and GPU model serving.
-- **Data Scientist, TotalEnergies Digital Factory**: machine learning and transparent pricing models for EV-charging data.
-- **Training Team Member, Automatants**: technical workshops on neural networks, Transformers, diffusion models, and reinforcement learning in CentraleSupélec's AI association.
-- **President, Rézo Metz-Rennes Fédérés**: led a six-person team operating network infrastructure for more than 450 members and managing an annual budget of approximately EUR 70,000.
+### [Decision Transformer for Limit Order Book Trading](https://github.com/clement-callaert/Decision-Transformer-LOB-Trading) 📈
 
-## Selected coursework
+A fully traceable offline-RL benchmark on FI-2010, built with Côme Genet. The canonical protocol uses five seeds, Days 1 to 8 for training, Day 9 for checkpoint selection, and untouched Day 10 evaluation. The preregistered primary Decision Transformer did not beat buy-and-hold under the frozen cost model, but the RTG sweep showed a strong behavioral effect, with mean normalized PnL moving from **-1.976 at P10 to -0.033 at P90**. Metrics, manifests, plots, and reproduction commands are committed.
 
-Reinforcement Learning 18/20, Machine Learning 18.6/20, Optimization for Computer Vision 16.28/20, Large-Scale Modeling 16/20, Graphical Models 16/20, and Advanced Unsupervised Learning 15/20.
+### [ACES Sycophancy](https://github.com/clement-callaert/aces-sycophancy/tree/submission) 🧠
 
-## Tools
+An adaptation of the NeurIPS 2024 ACES framework to search for regressive sycophancy in a local LLM using programmatic checkers. I diagnosed budget lock-in in a Bayesian ALP selector and added a fixed **20% uniform exploration floor**. Across two seeds, mean archive coverage recovered from **0.792 to 0.917**, while mean QD score increased from **9.219 to 11.000**.
 
-Python, PyTorch, JAX, NumPy, pandas, scikit-learn, Hydra, vLLM, Docker, Git, Linux, GPU clusters, experiment tracking, statistical evaluation, and reproducible research pipelines.
+### [Adaptive Latent Search for LPN](https://github.com/clement-callaert/lpn/tree/research/stochastic-latent-search) 🧩
 
-## Contact
+Research extensions to the Latent Program Network codebase for adaptive test-time computation. On a held-out `pattern_2d` split, a REINFORCE stop/continue controller matched fixed-five exact match, **0.90625**, while reducing mean search steps from **5.00 to 4.28**. A gradient-norm heuristic reached the same exact match in **3.44** steps, so the learned controller did not dominate the best heuristic. This is a controlled sandbox result, not an ARC claim.
 
-- [LinkedIn](https://www.linkedin.com/in/clement-callaert)
-- [Email](mailto:clement.callaert@student-cs.fr)
+### [Proximal Diffusion Models in PyTorch](https://github.com/clement-callaert/proximal-diffusion-models-pytorch) ✨
+
+A from-scratch implementation of Proximal Diffusion Models, including reverse-time SDE sampling through proximal operators and proximal-matching denoising. The project reproduces the low-NFE trade-off between sample sharpness and FID on controlled benchmarks.
+
+## Experience 💼
+
+- **Generative AI Engineer, MBDA** (apprenticeship, Sep 2025 - present): multi-agent LLM systems, reinforcement learning for adversarial cybersecurity scenarios, vLLM, Docker, and GPU-cluster deployment.
+- **Data Scientist, TotalEnergies Digital Factory** (apprenticeship, Nov 2023 - Sep 2025): machine learning for EV charging, including a transparent pricing model and a station-accessibility predictor.
+
+## Leadership and community 🌱
+
+- **Training Team Member, Automatants**, CentraleSupélec's AI association (Oct 2024 - Nov 2025): workshops and practical sessions on neural networks, Transformers, diffusion models, GANs, and reinforcement learning.
+- **President, Rézo Metz-Rennes Fédérés** (Nov 2023 - Apr 2024): led a six-person team operating residential network infrastructure for more than 450 members and managing an annual budget of approximately EUR 70,000.
+
+## Education 🎓
+
+- **M2 Mathematics & Artificial Intelligence**, Université Paris-Saclay, 2025 - 2026
+- **Engineering Degree, Mathematics and Data Science**, CentraleSupélec, 2023 - 2026
+- **Exchange in AI for Engineering**, Beihang University, Beijing, 2025
+- **CPGE Mathematics and Physics**, La Martinière Monplaisir, 2021 - 2023
+
+## Tools 🛠️
+
+**Python, PyTorch, NumPy, pandas, scikit-learn, Hydra, vLLM, Docker, Git, Linux, CI, GPU clusters**
+
+I also use a personal RTX 5090 workstation for research experiments, model serving, and benchmarking.
+
+## How to reach me 📬
+
+- LinkedIn: [in/clement-callaert](https://www.linkedin.com/in/clement-callaert)
+- Email: [clement.callaert@student-cs.fr](mailto:clement.callaert@student-cs.fr)
+
+♟️ Outside research, I play chess at around **1750 Elo on chess.com**.
