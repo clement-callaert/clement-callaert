@@ -1,48 +1,51 @@
-# Hi, I'm Clément 👋
+[README_PUBLIC.md](https://github.com/user-attachments/files/30364707/README_PUBLIC.md)
+# Hi, I'm Clément Callaert
 
-## About me 🙂
+I am an AI engineer and research-oriented applied mathematician completing two degrees in parallel:
 
-I am a French AI student and engineer. I am finishing two degrees in parallel: an **MSc in Engineering** at [CentraleSupélec](https://www.centralesupelec.fr/en), a leading French engineering school (Grande École), and a research master (**M2**) in **Mathematics & Artificial Intelligence** at [Université Paris-Saclay](https://www.universite-paris-saclay.fr/en). Alongside my studies, I work as a **Generative AI Engineer** at [MBDA](https://www.mbda-systems.com/).
+- a **Diplôme d'ingénieur at CentraleSupélec**, with a major in Mathematics and Data Science;
+- an **M2 in Mathematics and Artificial Intelligence at Université Paris-Saclay**.
 
-My research interests are **large language models**, **reinforcement learning** (offline and multi-agent), **world models**, and **diffusion models / stochastic differential equations**. I like implementing research papers from scratch in PyTorch to understand them in depth, and I am working toward a research career at the frontier of these topics, with the goal of doing a PhD.
+Alongside my studies, I work as a **Generative AI Engineer at MBDA**, where I develop and evaluate multi-agent LLM systems and deploy self-hosted models on GPU infrastructure.
 
-## What I'm looking for 🎯
+I am looking for a **PhD or research position starting in autumn 2026**. My main interests are generative models, world models, reinforcement learning, LLM agents, test-time computation, and reliable experimental methodology.
 
-I am looking for a **PhD or research internship in Europe**, starting in autumn 2026, on **diffusion models** and **world models**. If you work on these topics and think there could be a fit, feel free to reach out (LinkedIn or email below).
+## Featured research
 
-## Research & Projects 🔬
+### [Ego-World JEPA](https://github.com/clement-callaert/ego-world-sub-jepa)
+Controlled study of factored ego/world latent representations for model-based control on PushT. An eight-configuration screening grid and two-seed follow-up did not support a robust planning advantage from factorization: 12% versus 4% success at seed 0, then 4% versus 4% at seed 1. The project also shows that near-perfect in-slice probe scores do not predict closed-loop planning success.
 
-A selection of my projects, mostly from-scratch implementations and reproductions of research papers:
+### [Decision Transformer for Limit Order Book Trading](https://github.com/clement-callaert/Decision-Transformer-LOB-Trading)
+A fully traceable offline-RL benchmark on FI-2010 with five training seeds, Days 1-8 for training, Day 9 for checkpoint selection, and untouched Day 10 evaluation. Return-to-go conditioning materially changes deployed behavior, although the preregistered Decision Transformer did not beat buy-and-hold under the frozen nonzero-cost protocol. Metrics, plot data, manifests, and canonical figures are machine-readable and reproducible.
 
-- [Decision-Transformer-LOB-Trading](https://github.com/clement-callaert/Decision-Transformer-LOB-Trading) : offline reinforcement learning via sequence modeling (Decision Transformers), applied to limit order book data and framing high-frequency trading as conditional sequence modeling.
-- [proximal-diffusion-models-pytorch](https://github.com/clement-callaert/proximal-diffusion-models-pytorch) : Proximal Diffusion Models implemented from scratch (reverse-time SDE through a proximal operator), reducing the number of sampling steps compared to score-based diffusion.
-- [pricing_collusion](https://github.com/clement-callaert/pricing_collusion) : reproduction of Calvano et al. (2020) in a custom Gym environment, showing emergent algorithmic collusion through Q-learning (multi-agent RL).
-- [ADVI-Taxi-Trajectorie](https://github.com/clement-callaert/ADVI-Taxi-Trajectorie) : Automatic Differentiation Variational Inference scaled to 1.7M taxi trajectories (non-conjugate Gaussian Mixture Model, ELBO maximization).
-- [NSA_Malsiner_2016](https://github.com/clement-callaert/NSA_Malsiner_2016) : reproduction of "Model-based clustering based on sparse finite Gaussian mixtures" (Malsiner-Walli, Frühwirth-Schnatter & Grün).
-- [Projet_TDL](https://github.com/clement-callaert/Projet_TDL) : reproduction of "(S)GD over Diagonal Linear Networks: Implicit Bias, Large Stepsizes and Edge of Stability".
+### [ACES Sycophancy](https://github.com/clement-callaert/aces-sycophancy)
+Adaptation of the NeurIPS 2024 ACES quality-diversity framework to search for regressive sycophancy in a local LLM, using Python-grounded fitness rather than LLM judges. A Bayesian learning-progress selector initially suffered from budget lock-in; adding a fixed 20% uniform exploration floor recovered mean coverage to 0.917 and mean QD score to 11.0 across two seeds.
 
-## Experience 💼
+### [Adaptive Test-Time Search for Latent Program Networks](https://github.com/clement-callaert/lpn/tree/research/stochastic-latent-search)
+Research extension of the NeurIPS 2025 Latent Program Network codebase. I reproduced the three-seed `pattern_2d` latent-search baseline and implemented an RL stop/continue controller. On the matched sandbox test, the controller preserved fixed-5 exact match of 0.90625 while reducing average search from 5.000 to 4.281 steps. These are implementation results on in-family tasks, not ARC-AGI claims.
 
-- **Generative AI Engineer**, MBDA (apprenticeship, Sep 2025 - present) : research on multi-agent LLM systems trained with reinforcement learning, and self-hosted LLM serving with vLLM and Docker on a GPU cluster.
-- **Data Scientist**, TotalEnergies Digital Factory (apprenticeship, Nov 2023 - Sep 2025) : machine learning for EV-charging, including a transparent dynamic-pricing model and a station-accessibility predictor.
-- **Member**, Automatants, the CentraleSupélec AI student association (Oct 2024 - Nov 2025) : technical workshops on neural networks, CNNs, GANs, Transformers and reinforcement learning.
-- **President**, Led a student association providing residential Internet access; maintained two network infrastructures.
+### [Proximal Diffusion Models in PyTorch](https://github.com/clement-callaert/proximal-diffusion-models-pytorch)
+From-scratch implementation of Proximal Diffusion Models, including reverse-time SDE sampling and proximal-matching denoising on low-dimensional distributions and MNIST.
 
-## Education 🎓
+### Anonymous generative-modeling manuscript under review
+I am also developing a controlled closed-form study of field-regularity criteria and fixed-budget discretization error in probability-flow ODE sampling. Public submission details and the direct repository link are intentionally omitted while the work is under double-blind review.
 
-- **M2 Mathematics & Artificial Intelligence** (research master), Université Paris-Saclay, 2025 - 2026
-- **MSc in Engineering**, CentraleSupélec, major in Data Science, 2023 - 2026
-- **Exchange in AI for Engineering**, Beihang University, Beijing, 2025
-- **Preparatory classes (CPGE)**, La Martinière Monplaisir, 2021 - 2023
+## Experience and leadership
 
-## Tools 🛠️
+- **Generative AI Engineer, MBDA**: multi-agent LLM systems, reinforcement learning, vLLM, Docker, and GPU model serving.
+- **Data Scientist, TotalEnergies Digital Factory**: machine learning and transparent pricing models for EV-charging data.
+- **Training Team Member, Automatants**: technical workshops on neural networks, Transformers, diffusion models, and reinforcement learning in CentraleSupélec's AI association.
+- **President, Rézo Metz-Rennes Fédérés**: led a six-person team operating network infrastructure for more than 450 members and managing an annual budget of approximately EUR 70,000.
 
-**Languages & tools:** Python, PyTorch, vLLM, Docker, Git, GPU compute clusters.
-I also run a personal RTX 5090 workstation to fine-tune and benchmark open models.
+## Selected coursework
 
-## How to reach me 📬
+Reinforcement Learning 18/20, Machine Learning 18.6/20, Optimization for Computer Vision 16.28/20, Large-Scale Modeling 16/20, Graphical Models 16/20, and Advanced Unsupervised Learning 15/20.
 
-- LinkedIn: [in/clement-callaert](https://www.linkedin.com/in/clement-callaert)
-- Email: clement.callaert@student-cs.fr
+## Tools
 
-♟️ Outside research, I play chess (around 1750 on chess.com).
+Python, PyTorch, JAX, NumPy, pandas, scikit-learn, Hydra, vLLM, Docker, Git, Linux, GPU clusters, experiment tracking, statistical evaluation, and reproducible research pipelines.
+
+## Contact
+
+- [LinkedIn](https://www.linkedin.com/in/clement-callaert)
+- [Email](mailto:clement.callaert@student-cs.fr)
